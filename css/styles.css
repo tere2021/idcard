@@ -13,7 +13,7 @@
 
 
 .page {
-    background: url(/img/bg-pattern-top.svg), url(/img/bg-pattern-bottom.svg);
+    background: url(/img/bg-pattern-top.png), url(/img/bg-pattern-bottom.png);
     background-position: top -1020px left -1020px, bottom -1320px right -900px;
     background-repeat: no-repeat;
     background-size: cover;
