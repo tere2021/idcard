@@ -14,12 +14,13 @@
 
 
 .page {
-    background: url(/img/bg-pattern-top.svg),url(/img/bg-pattern-bottom.svg);
+    background: url(/img/bg-pattern-top.svg), url(/img/bg-pattern-bottom.svg);
     background-position: top -950px left -700px, bottom -1150px right -550px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color:var(--acquamarosc);
     background-blend-mode: overlay;
+    
     width: 100%;
     height: 100hv;
 }
