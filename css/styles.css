@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url(https://tere2021.github.io/idcard/img/bg-pattern-top.png), url(https://tere2021.github.io/idcard/img/bg-pattern-bottom.png)!important;
+    background: url(https://github.com/tere2021/idcard/blob/master/img/bg-pattern-top.png), url(https://github.com/tere2021/idcard/blob/master/img/bg-pattern-bottom.png)!important;
     background-position: top -1000px left -1000px, bottom -1100px right -1000px !important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
