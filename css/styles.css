@@ -1,33 +1,69 @@
-
-
 :root {
-    --acquamar: #06faf6;
-    --black-light: #494949;
-    --grey: #bcbdbd;
-    --white:#ffff;
-    --acquamarosc:  #019694;
+    --blue-light: #92ccff;
+    --blue-dark: #003351;
+    --blue-llight: #cce5ff;
+    --blue:  #006397;
     --sm: 11px;
     --md: 14px;
     --lg: 20px;
   }
-
-
-.page {
-    background: url(/img/bg-pattern-top.png), url(/img/bg-pattern-bottom.png);
-    background-position: top -1020px left -1020px, bottom -1320px right -900px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:var(--acquamarosc);
-    background-blend-mode: overlay;
-    
-    width: 100%;
-    height: 100hv;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-.profile-card {
+
+body {
+    background: url(/img/bg-pattern-top.png), url(/img/bg-pattern-bottom.png)!important;
+    background-position: top -1000px left -1000px, bottom -1100px right -1000px !important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-color:var(--blue-dark)!important;
+    background-blend-mode: overlay!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   height: 100vh;
+}
+
+
+h4{
+    padding-top: 30px;
+    padding-left: 0px!important;
+    color: var(--blue-dark);
+}
+h5, p {
+    color: var(--blue-llight);
+}
+td p {
+    color: var(--blue);
+    font-size: 14px;
+}
+p {
+    font-size: 12px;
+    margin-bottom: 0!important;
+    padding-top: 7px; 
+    font-weight: lighter;
+}
+h5{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+#redesSociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  
+}
+.card {
     max-width: 300px;
-    background-color: var(--acquamar);
+    background-color: var(--blue-light);
     border-radius: 5px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, .5);
+   
     overflow: hidden;
     position: relative;
     margin: 10px auto;
@@ -41,7 +77,7 @@
 .profile-card .profile-content {
     position: relative;
     padding: 15px;
-    background-color: var(--acquamar);
+    background-color: var(--blue-llight);
 }
 
 .profile-card .profile-name {
@@ -51,20 +87,20 @@
     left: 0px;
     right: 0px;
     top: -60px;
-    color: var(--white);
+    color: var(--blue-llight);
     font-size: 19px;
     letter-spacing: 3px;
 }
 
 .profile-card .profile-name p {
-    color: var(--grey);
+  
     font-weight: 600;
     font-size: 13px;
     letter-spacing: 1.5px;
 }
 
 .profile-card .profile-description {
-    color: var(--black-light);
+    color: var(--blue);
     font-family: 'Georgia', serif;
     font-size: 12px;
     padding: 10px;
@@ -77,7 +113,59 @@
     filter: brightness(60%);
 }
 
-@media only screen and (max-width: 850px){
-.page {  
-    background-position: top -400px left -400px, bottom -500px right -300px;
-}}
+
+.fa {  
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+    border-radius: 50%; 
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+  }
+
+  .fa-github {
+    background: #000000;
+  }
+
+
+  td {
+  padding: 0px!important;
+}
+  
+@media only screen and (min-width: 576px){
+    body{
+        background-position: top -500px left -500px, bottom -500px right -500px!important;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px){
+    body{
+        background-position: top -500px left -500px, bottom -500px right -500px!important;
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+    body{
+        background-position: top -700px left -700px, bottom -700px right -700px!important;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body{
+        background-position: top -800px left -800px, bottom -800px right -800px!important;
+    }
+}
