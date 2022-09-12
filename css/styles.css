@@ -54,22 +54,30 @@ h5{
 }
 
 #redesSociales {
+    height: 2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: left;
-  
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 4px;
+    border-radius: 15px;
+   margin-left: 2rem;
+   background: linear-gradient(180deg, var(--blue-llight), var(--blue-light));
+   border: 1px solid var(--blue);
 }
 .card {
+  
     max-width: 300px;
     background-color: var(--blue-light);
-    border-radius: 5px;
-   
+    border-radius: 5px;  
     overflow: hidden;
     position: relative;
     margin: 10px auto;
     cursor: pointer;
 }
 
+.card img {
+    transition: border 0.9s linear;
+}
 .profile-card img {
     transition: all 0.25s linear;
 }
@@ -113,30 +121,6 @@ h5{
     filter: brightness(60%);
 }
 
-
-.fa {  
-    width: 20px;
-    height: 20px;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    color: white;
-    border-radius: 50%; 
-  }
-
-  .fa:hover {
-      opacity: 0.7;
-  }
-
-  .fa-linkedin {
-    background: #007bb5;
-  }
-
-  .fa-github {
-    background: #000000;
-  }
 
 
   td {
